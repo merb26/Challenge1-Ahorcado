@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="../css/panel/panel.css">
+    <link rel="stylesheet" href="../css/panel/panel-area.css">
+    <link rel="stylesheet" href="../css/panel/panel-logo.css">
+    <link rel="stylesheet" href="../css/panel/boton.css">
+    <link rel="stylesheet" href="../css/panel/panel-botones.css">
+    <link rel="stylesheet" href="../css/panel/panel-botones-boton1.css">
+    <link rel="stylesheet" href="../css/panel/panel-botones-boton2.css">
+    <link rel="stylesheet" href="../css/panel/panel-area-guion--espacion.css">
+</head>
+
+<body>
+    <div class="container-fluid panel">
+        <img class="row panel__logo" src="../img/logo.svg" alt="Logotipo">
+        <div class="row align-items-center panel__area">
+            <div class="d-flex justify-content-center">
+                <canvas id="canvas" width="1200" height="600"></canvas>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center panel__botones">
+            <button class="panel__botones__boton-1" onclick="location.reload()">Nuevo juego</button>
+            <button class="panel__botones__boton-2" onclick="desistir()">Desistir</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="../apis/escogerPalabraSecreta.js"></script>
+    <script src="../apis/dibujarGuion.js"></script>
+    <script src="../apis/canvas.js"></script>
+    <script src="../apis/pulsarTecla.js"></script>
+    <script src="../apis/muneco.js"></script>
+    <script src="../apis/agregarLetraCorrecta.js"></script>
+    <script src="../apis/agregarLetraIncorrecta.js"></script>
+    <script src="../apis/desistir.js"></script>
+</body>
+
+</html>

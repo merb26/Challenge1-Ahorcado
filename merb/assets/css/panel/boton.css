@@ -1,0 +1,15 @@
+.boton {
+  align-items: center;
+  background: #0a3871;
+  border-radius: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  min-width: 317px;
+  min-height: 114px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  color: #ffffff;
+}

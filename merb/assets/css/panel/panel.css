@@ -1,0 +1,9 @@
+html {
+  height: 100% !important;
+  background-color: #f3f5fc;
+}
+
+.panel {
+  height: 100vh;
+  background: #f3f5fc;
+}
